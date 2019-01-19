@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape"
+    android:orientation="vertical">
+
+    <RelativeLayout android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/meme_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Meme Title"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/text_color_dark" />
+
+        <Button
+            android:id="@+id/comments"
+            style="@android:style/Widget.Button.Small"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/vote_button"
+            android:text="12"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/meme_imageview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/mem"
+        android:scaleType="centerCrop"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <ProgressBar
+        android:id="@+id/progressBar_votes"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="gone" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <Button
+            style="@android:style/Widget.Button.Small"
+            android:id="@+id/vote_up"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/vote_button"
+            android:text="+"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:onClick="voteUp" />
+
+        <TextView
+            android:id="@+id/votesUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="12"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/green" />
+        <TextView
+            android:id="@+id/voteDivider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text=" / "
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/text_color_dark" />
+        <TextView
+            android:id="@+id/votesDown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="12"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/red" />
+
+        <Button
+            android:id="@+id/vote_down"
+            style="@android:style/Widget.Button.Small"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/vote_button"
+            android:text="-"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:onClick="voteDown" />
+
+        <Button
+            android:id="@+id/save"
+            style="@android:style/Widget.Button.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_shape"
+            android:text="Więcej Opcji"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:onClick="More" />
+
+    </LinearLayout>
+
+</LinearLayout>

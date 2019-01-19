@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Kwejk.pl</string>
+    <string name="mem">Mem</string>
+    <string name="Home">Strona Główna</string>
+    <string name="Waiting">Oczekujące</string>
+    <string name="Top12">Najlepsze z 12h</string>
+    <string name="Top24">Najlepsze z 24h</string>
+    <string name="Top48">Najlepsze z 48h</string>
+    <string name="Info">Informacje</string>
+    <string name="navigation_drawer_open">Open Navigation Drawer</string>
+    <string name="navigation_drawer_close">Close Navigation Drawer</string>
+</resources>

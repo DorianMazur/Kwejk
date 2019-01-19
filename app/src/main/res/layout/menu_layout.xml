@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/shape">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/ll_menu"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/Comments"
+            style="@android:style/Widget.Button.Small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="@drawable/button_shape"
+            android:onClick="ShowComments"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:text="Komentarze" />
+
+        <Button
+            android:id="@+id/Save"
+            style="@android:style/Widget.Button.Small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="@drawable/button_shape"
+            android:onClick="Save"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:text="Zapisz Obrazek" />
+
+        <Button
+            android:id="@+id/Share"
+            style="@android:style/Widget.Button.Small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="@drawable/button_shape"
+            android:onClick="Share"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:text="Udostępnij Obrazek" />
+
+
+        <Button
+            android:id="@+id/Visit"
+            style="@android:style/Widget.Button.Small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="@drawable/button_shape"
+            android:onClick="Visit"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:text="Otwórz w przeglądarce" />
+    </LinearLayout>
+
+</ScrollView>

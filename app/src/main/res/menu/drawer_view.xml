@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/home"
+            android:iconTint="@color/yellow"
+            android:title="@string/Home" />
+        <item
+            android:id="@+id/waiting"
+            android:icon="@drawable/waiting"
+            android:title="@string/Waiting" />
+        <item
+            android:id="@+id/top12"
+            android:icon="@drawable/star"
+            android:title="@string/Top12" />
+
+        <item
+            android:id="@+id/top24"
+            android:icon="@drawable/star"
+            android:title="@string/Top24" />
+
+        <item
+            android:id="@+id/top48"
+            android:icon="@drawable/star"
+            android:title="@string/Top48" />
+
+    </group>
+</menu>
