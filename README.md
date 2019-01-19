@@ -1,3 +1,4 @@
 # Kwejk
 Aplikacja serwsiu kwejk.pl
-<b>t</b>
+<br>
+<img src="https://mazurdorian.pl/images/Kwejk/Kwejk.jpg">
