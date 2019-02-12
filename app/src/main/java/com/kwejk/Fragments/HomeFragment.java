@@ -48,7 +48,7 @@ public class HomeFragment extends Fragment implements ParserResponseInterface {
         listView = (ListView) getView().findViewById(R.id.listView);
         adapter = new Adapter(getActivity(), R.layout.home, memeList);
         listView.setAdapter(adapter);
-        HomeActivity.toolbar.setTitle("Strona Główna");
+        HomeActivity.toolbar.setTitle(R.string.Home);
         ListView listView = (ListView) getView().findViewById(R.id.listView);
         listView.setOnScrollListener(new EndlessScrollListener() {
             @Override

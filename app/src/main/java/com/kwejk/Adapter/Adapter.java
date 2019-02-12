@@ -52,7 +52,7 @@ public class Adapter extends ArrayAdapter<MemeModel> {
     public View getView(int position, View convertView, ViewGroup parent) {
 
         Holder holder;
-        MemeModel person = getItem(position);
+        MemeModel meme = getItem(position);
 
         if (convertView == null){
 
@@ -67,8 +67,8 @@ public class Adapter extends ArrayAdapter<MemeModel> {
 
             //Get xml components into our holder class
             holder.title = (TextView)convertView.findViewById(R.id.meme_title);
-            convertView.findViewById(R.id.vote_up).setTag(person.getId());
-            convertView.findViewById(R.id.vote_down).setTag(person.getId());
+            convertView.findViewById(R.id.vote_up).setTag(meme.getId());
+            convertView.findViewById(R.id.vote_down).setTag(meme.getId());
             holder.votesUp = (TextView)convertView.findViewById(R.id.votesUp);
             holder.votesDown = (TextView)convertView.findViewById(R.id.votesDown);
             holder.comments = (TextView)convertView.findViewById(R.id.comments);
@@ -85,13 +85,13 @@ public class Adapter extends ArrayAdapter<MemeModel> {
 
 
         //Fill our view components with data
-        holder.title.setText(person.getTitle());
-        holder.votesUp.setText(person.getVotesUp());
-        holder.votesDown.setText(person.getVotesDown());
-        holder.comments.setText(person.getComments());
-        holder.ID = person.getId();
+        holder.title.setText(meme.getTitle());
+        holder.votesUp.setText(meme.getVotesUp());
+        holder.votesDown.setText(meme.getVotesDown());
+        holder.comments.setText(meme.getComments());
+        holder.ID = meme.getId();
         Picasso.with(context).setLoggingEnabled(true);
-        Picasso.with(context).load(person.getImageUrl()).into(holder.imageView);
+        Picasso.with(context).load(meme.getImageUrl()).into(holder.imageView);
 
         return convertView;
     }

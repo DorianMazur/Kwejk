@@ -24,6 +24,5 @@ public class CommentModel {
 
     public String getDate() { return date; }
 
-    public String getAvatar(){ return avatar; }
 
 }

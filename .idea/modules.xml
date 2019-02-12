@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/WebScrapingbyJsoup-code.iml" filepath="$PROJECT_DIR$/WebScrapingbyJsoup-code.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Kwejk.iml" filepath="$PROJECT_DIR$/Kwejk.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

@@ -48,7 +48,7 @@ public class WaitingFragment extends Fragment implements ParserResponseInterface
         listView = (ListView) getView().findViewById(R.id.listView);
         adapter = new Adapter(getActivity(), R.layout.home, memeList);
         listView.setAdapter(adapter);
-        HomeActivity.toolbar.setTitle("Oczekujące");
+        HomeActivity.toolbar.setTitle(R.string.Waiting);
         ListView listView = (ListView) getView().findViewById(R.id.listView);
         listView.setOnScrollListener(new EndlessScrollListener() {
             @Override

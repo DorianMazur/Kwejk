@@ -48,7 +48,7 @@ public class Top12Fragment extends Fragment implements ParserResponseInterface {
         listView = (ListView) getView().findViewById(R.id.listView);
         adapter = new Adapter(getActivity(), R.layout.home, memeList);
         listView.setAdapter(adapter);
-        HomeActivity.toolbar.setTitle("Najlepsze z 12h");
+        HomeActivity.toolbar.setTitle(R.string.Top12);
         ListView listView = (ListView) getView().findViewById(R.id.listView);
         listView.setOnScrollListener(new EndlessScrollListener() {
             @Override

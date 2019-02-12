@@ -76,7 +76,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
 
     private void initializeViews() {
         toolbar = (Toolbar) findViewById(R.id.toolbar);
-        toolbar.setTitle("Strona Główna");
+        toolbar.setTitle(getString(R.string.Home));
         setSupportActionBar(toolbar);
         drawerLayout = findViewById(R.id.drawer_layout);
         navigationView = findViewById(R.id.nav_view);
@@ -209,7 +209,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
             shareIntent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
             shareIntent.setDataAndType(contentUri, getContentResolver().getType(contentUri));
             shareIntent.putExtra(Intent.EXTRA_STREAM, contentUri);
-            startActivity(Intent.createChooser(shareIntent, "Udostępnij obrazek"));
+            startActivity(Intent.createChooser(shareIntent, getString(R.string.Share)));
         }
         dialogGlobal.dismiss();
     }
@@ -243,7 +243,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                 if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                     SaveImageGranted();
                 } else {
-                    Toast.makeText(this, "Brak uprawnień", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, R.string.NoPermissions, Toast.LENGTH_SHORT).show();
                 }
     }
 

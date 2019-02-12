@@ -48,7 +48,7 @@ public class Top48Fragment extends Fragment implements ParserResponseInterface {
         listView = (ListView) getView().findViewById(R.id.listView);
         adapter = new Adapter(getActivity(), R.layout.home, memeList);
         listView.setAdapter(adapter);
-        HomeActivity.toolbar.setTitle("Najlepsze z 48h");
+        HomeActivity.toolbar.setTitle(R.string.Top48);
         ListView listView = (ListView) getView().findViewById(R.id.listView);
         listView.setOnScrollListener(new EndlessScrollListener() {
             @Override

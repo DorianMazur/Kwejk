@@ -7,6 +7,6 @@
     <string name="Top24">Najlepsze z 24h</string>
     <string name="Top48">Najlepsze z 48h</string>
     <string name="Info">Informacje</string>
-    <string name="navigation_drawer_open">Open Navigation Drawer</string>
-    <string name="navigation_drawer_close">Close Navigation Drawer</string>
+    <string name="NoPermissions">Brak uprawnień</string>
+    <string name="Share">Udostępnij obrazek</string>
 </resources>
